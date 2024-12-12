@@ -1,0 +1,541 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(294.96% 188.34% at 132.22% -33.3%, #18222C 0%, #257AD3 100%);
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.Hero {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-numbers {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #000000;
+}
+
+.contact-items {
+    margin-right: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-numbers img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 55px;
+}
+
+.contact-numbers a {
+    padding-top: 3px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 45%;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-family: "PODIUM Sharp 9.10";
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-family: "PODIUM Sharp 9.10";
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+.hero-btn {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: #000;
+}
+
+span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+
+.hero-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.hero-btn :hover {
+    color: #fff;
+}
+
+.hero-btn:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.hero-image {
+    position: absolute;
+    margin-right: 5%;
+    margin-left: 4%;
+    top: 15%;
+    transform: translateY(-50%);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+
+.contact-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+#contact-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: black 2px solid;
+}
+
+#contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: -10px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.contact-icon-container:hover #contact-button {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    margin-left: 10px;
+}
+
+.about{
+    background-color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.head h2{
+    font-size: 65px;
+    font-family: "Harabara Mais demo";
+    color: #000000;
+    margin: 15px 0 15px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px 129px 0px 129px;
+}
+
+.about-content p {
+    font-size: 24px;
+    font-family: "Times sans serif";
+    color: #000000;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 15px 0px;
+    position: relative;
+    padding: 20px;
+}
+
+.about-content p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-top: 4px solid #257AD3;
+    border-left: 4px solid #257AD3;
+    border-radius: 4px;
+}
+
+
+.clickable-image {
+    width: 750px;
+    height: auto;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: auto;
+}
+.clickable-image:hover {
+    transform: scale(1.05);
+}
+
+.image-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+.features{
+    background-color: rgb(241, 241, 241);
+}
+
+.features-container {
+    margin: 0 5% 0 5%;
+    padding: 20px 0 20px 0;
+    color: #000;
+}
+
+.feature-item {
+    margin-bottom: 25px;
+}
+
+.feature-item h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Times sans serif";
+}
+
+.feature-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.feature-item ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Times sans serif";
+}
+
+.read-more-button {
+    margin-top: 50px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-1 {
+    background: #257AD3;
+    border: none;
+}
+
+.btn-1:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+#contact-us {
+    background: radial-gradient(399.05% 183.32% at -28.96% -30.29%, #4185CD 0%, #214367 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    flex-grow: 1;
+}
+.contact-us .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.contact-heading h2 {
+    font-size: 65px;
+    font-family: "Harabara Mais demo";
+    color: #ffffff;
+    margin: 15px 0 15px 0;
+}
+.contact-us .line-left, .contact-us .line-right {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    width: 20%;
+    margin: 0 5px;
+}
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.contact-form label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e9e9e9;
+}
+.contact-form input, .contact-form textarea {
+    font-family: Roboto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #333333;
+}
+.contact-form textarea {
+    resize: none;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #999999;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size:10rem;
+}
+.checkbox-container a{
+    color: white;
+}
+.checkbox-container input {
+    width: auto;
+    margin: 0;
+}
+.submit-btn {
+    display: block;
+    margin-left: 95%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 22px;
+    width: 25%;
+    margin-bottom: 25px;
+}
+.submit-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #5C5C5C;
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    position: bottom;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h3 {
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    gap: 15px;
+    cursor: pointer;
+}
+.footer-line {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    width: 50%;
+    margin: 15px auto;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1rem;
+    font-family: Roboto;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: none;
+}
+
