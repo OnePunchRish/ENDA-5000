@@ -17,6 +17,10 @@ function closeImagePopup() {
     popup.style.display = 'none';
 }
 
+function goToPage() {
+    window.open('https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/enda-5000-series-448/','_blank');
+}
+
 document.getElementById('contact-button').addEventListener('click' , function(){
     const contactSection = document.getElementById('contact-us');
     if (contactSection) {
@@ -43,3 +47,5 @@ document.getElementById('contact').addEventListener('click' , function(){
         console.error("Element with ID 'contact-us' not found.");
     }
 });
+
+document.getElementById('explore').addEventListener('click', goToPage);

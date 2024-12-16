@@ -33,7 +33,7 @@
                 <p>Precise, stable gas flow control, unaffected by pressure or<br>temperature. Ideal for accurate measurements and<br>automation in industries.</p>
                 <div class="buttons">
                     <button class="hero-btn">
-                        <span>Explore</span>
+                        <span id="explore">Explore</span>
                     </button>
                     <button class="hero-btn">
                         <span id="contact">Contact</span>
